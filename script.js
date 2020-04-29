@@ -1,5 +1,2 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-// prints "hi" in the browser's dev tools console
-console.log("hi");
+let f=document.querySelector("#contact > form");
+f.onsubmit=e=>setTimeout(e=>f.outerHTML='<div class="grow">Message sent!</div>',1000);
