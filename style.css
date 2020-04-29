@@ -117,3 +117,45 @@ footer::before {
 .card>*:last-child{
   margin:0;
 }
+
+#contact{
+  height:15rem;
+}
+
+form {
+    display: grid;
+    grid-gap: 1rem;
+    width: 100%;
+  flex-grow:1;
+  grid-template-rows:2rem 1fr 2rem;
+}
+
+.grow{
+  flex-grow:1;
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]), textarea {
+    border: 1px solid var(--logo-color);
+    border-radius: 0.25rem;
+    font: inherit;
+    padding: 0.25rem;
+    outline: none;
+}
+
+*:focus {
+    box-shadow: 0 0 0 2px #8a1e6670;
+  outline:none;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"],button {
+    background: var(--logo-background-color);
+    border: 1px solid var(--logo-color);
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font: inherit;
+    box-shadow: 0 2px 4px #230a1b52;
+}
+
+#formTarget {
+    display:none;
+}

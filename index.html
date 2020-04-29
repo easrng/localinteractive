@@ -1,17 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>LocalInteractive</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
-    <script src="/script.js" defer></script>
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
-  </head>  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer=""></script>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  </head>
   <body>
     <header class="logo">
-      <img src="/logo.svg">
+      <img src="/logo.svg" />
       <h1>LocalInteractive</h1>
     </header>
     <div class="card" id="about">
@@ -19,7 +18,11 @@
         About
       </h3>
       <p>
-        We are an energy-efficient provider of web services for local businesses and students in Maine. Because of our location, we have very low latency for connections from Maine compared to other CDN and cloud platforms. For example, the closest datacenter to Maine in the Cloudflare network (A popular CDN), is in Newark, New Jersey.
+        We are an energy-efficient provider of web services for local businesses
+        and students in Maine. Because of our location, we have very low latency
+        for connections from Maine compared to other CDN and cloud platforms.
+        For example, the closest datacenter to Maine in the Cloudflare network
+        (A popular CDN), is in Newark, New Jersey.
       </p>
     </div>
     <div class="card" id="services">
@@ -27,15 +30,48 @@
         Our Services
       </h3>
       <div class="servicelist">
-        <figure><embed src="web.svg"><figcaption>Web Hosting</figcaption></figure>
-        <figure><embed src="pin.svg"><figcaption>IPFS Pinning</figcaption></figure>
-        <figure><embed src="gear.svg"><figcaption>Other Services</figcaption></figure>
+        <figure>
+          <embed src="web.svg" />
+          <figcaption>Web Hosting</figcaption>
+        </figure>
+        <figure>
+          <embed src="pin.svg" />
+          <figcaption>IPFS Pinning</figcaption>
+        </figure>
+        <figure>
+          <embed src="gear.svg" />
+          <figcaption>Other Services</figcaption>
+        </figure>
       </div>
     </div>
+    <div class="card" id="contact">
+      <h3>
+        Contact Us
+      </h3>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScdBZnIXr4YtGZAYiCncAN08P07J9NdrEi_j5a1R74-3IF5aw/formResponse?embedded=true"
+        target="formTarget"
+        method="POST"
+      >
+        <input
+          type="email"
+          autocomplete="email"
+          name="emailAddress"
+          required=""
+          placeholder="Your Email"
+        />
+        <textarea
+          required=""
+          name="entry.831122124"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <div class="spacer"></div>
+    <iframe src="about:blank" name="formTarget" id="formTarget"></iframe>
     <footer>
       <a href="legal.html">Legal</a>
     </footer>
-    <!-- -->
   </body>
 </html>
